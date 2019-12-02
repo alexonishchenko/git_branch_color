@@ -7,7 +7,7 @@ if [[ ! -z $GITBR ]]
               echo -e "\e[31m($GITBR)\e[0m"
       else
         let x+=`ascii -s ${GITBR:0:1} | awk '{print $2}'`
-        let GITBR_CLR="$x%5 + 31"
+        let GITBR_CLR="$x%5 + 32"
               echo -e "\e[${GITBR_CLR}m($GITBR)\e[0m"
     fi
 fi
