@@ -14,3 +14,6 @@ fi
 }
 
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(gitbranchcolor)\$ '
+
+alias ansible='ansible -e "ansible_python_interpreter=/usr/bin/env python"'
+alias ansible-playbook='ansible-playbook -e "ansible_python_interpreter=/usr/bin
